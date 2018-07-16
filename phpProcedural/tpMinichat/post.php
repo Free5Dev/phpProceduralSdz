@@ -12,5 +12,4 @@
    }else{
        header("Location:index.php");
    }
->>>>>>> master
 ?>
