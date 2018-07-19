@@ -1,6 +1,7 @@
 <?php 
     require_once("connexion.inc.php");
-    $reqSelect=$bdd->query("SELECT id,titre,contenu,date_format(date_creation,'Le %d/%m/%Y à %Hh:%imin:%ss') as dateCreation FROM billets ORDER BY id DESC LIMIT 5");
+    require_once("Pagination.php");
+    $reqSelect=$bdd->query("SELECT id,titre,contenu,date_format(date_creation,'Le %d/%m/%Y à %Hh:%imin:%ss') as dateCreation FROM billets ORDER BY id DESC LIMIT ".$premierMessageAafficher.", ".$nombreDeMessageParPage);
     
    
 ?>
@@ -20,5 +21,13 @@
     <p><?php echo nl2br(htmlspecialchars($donneesSelect['contenu'])) ?></p>
     <p><a href="commentaires.php?ref=<?php echo htmlspecialchars($donneesSelect['id']); ?>">Commentaires</a></p>
     <?php } $reqSelect->closeCursor(); ?>
+    <?php  
+        echo 'Page : ';
+        for ($i = 1 ; $i <= $nombreDePage ; $i++)
+        {
+            echo '<a href="index.php?page=' . $i . '">' . $i . '</a> ';
+            
+        }
+    ?>
 </body>
 </html>
