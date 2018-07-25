@@ -1,0 +1,4 @@
+AuthName "Veuillez entrer vos identifiants et vos mots de passe"
+AuthType Basic
+AuthUserFile "C:\wamp64\www\sdz\phpProcedural\tpBlogCommentaire\admin\.htpasswd"
+Require valid-user
