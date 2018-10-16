@@ -1,0 +1,102 @@
+body{
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: blue;
+    text-shadow: 3px 3px 6px #000;
+}
+form{
+    width: 1000px;
+    margin: auto;
+}
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    }
+form fieldset input, form fieldset textarea{
+    margin: 5px;
+    width: 500px;
+    flex:1;
+    border:1px solid #000;
+}
+form fieldset input{
+    height: 30px;
+}
+#btnPostule{
+   width: 100px;
+   border:1px solid #000;
+   background-color: #fff;
+   color: #000;
+}
+#btnPostule:hover{
+
+    border:1px solid blue;
+    background-color:blue;
+    color: #fff;
+ }
+ .lien{
+     width: 1000px;
+     margin: auto;
+     padding-top: 15px;
+ }
+ .lien a{
+     background-color: blue;
+     color: #fff;
+     border-radius:5px;
+     text-decoration: none;
+     width: 100px;
+     display: flex;
+     height: 30px;
+     line-height: 30px;
+     align-items: center;
+     justify-content: center;
+ }
+.img{
+    text-align: center;
+   
+}
+.img img{
+    width: 100%;
+    min-width: 100%;
+    height: 200px;
+    min-height: 200px;
+    line-height: 200px;
+    display: block;
+}
+.p{
+    text-align: justify;
+    width: 1000px;
+    margin: auto;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 2px solid #eee;
+    box-shadow: 3px 3px 3px #eee;
+}
+mark{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align:left;
+}
+.page{
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+.page a{
+    border: 1px solid maroon;
+    background-color: maroon;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+.page a:active{
+    background-color: #000;
+    color: #fff;
+}
