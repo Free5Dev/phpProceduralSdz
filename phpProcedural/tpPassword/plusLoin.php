@@ -31,7 +31,7 @@
             if(!empty($_POST['login']) and !empty($_POST['password'])){
                 if($_POST['login']=="said" and $_POST['password']=="1234"){
                     ?>
-                    <h1>Welcom Mr. <?php echo $_POST['login'];  ?></h1>
+                    <h1>Welcom Mr. <?php echo htmlspecialchars($_POST['login']);  ?></h1>
                     <p>Voici votre code secret : <mark>free5dev</mark></p>
                     <?php
                 }else{
